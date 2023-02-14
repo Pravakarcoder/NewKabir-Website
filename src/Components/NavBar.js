@@ -50,7 +50,7 @@ import { Link } from 'react-router-dom';
               
         
                 <li className="nav-item"> 
-                <Link onClick={collapseNav} className="nav-link"  to="/">About us</Link>
+                <Link onClick={collapseNav} className="nav-link"  to="/about">About us</Link>
                 </li>
                     
         
@@ -62,7 +62,7 @@ import { Link } from 'react-router-dom';
         
         
                 <li className="nav-item"> 
-                <Link onClick={collapseNav} className="nav-link"  to="/">Contact us</Link>
+                <Link onClick={collapseNav} className="nav-link"  to="/contactUs">Contact us</Link>
                 </li>
         
                 

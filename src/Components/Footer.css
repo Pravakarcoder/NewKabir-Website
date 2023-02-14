@@ -85,6 +85,7 @@ footer{
 }
 .left .content .social a span:hover{
   background: rgba(67, 184, 195, 0.999);
+   
   
   
 }
@@ -115,16 +116,24 @@ footer{
 
  .email a{
    text-decoration: none;
+   color:  rgb(252, 247, 247);
     
  }
 
  .place a{
   text-decoration: none;
+  color:  rgb(252, 247, 247);
    
 }
  .phone a{
     text-decoration: none;
+    color:  rgb(252, 247, 247);
      
+  }
+
+  .Read__more{
+    text-decoration: none;
+    color:  rgb(5, 244, 200);
   }
 
 

@@ -6,9 +6,7 @@ import {
   faCircleChevronRight, 
   faCircleXmark
 } from '@fortawesome/free-solid-svg-icons'
-
 import './wsp-gallery.css'
-
 const WSPGallery = ({galleryImages}) => {
 
   const [slideNumber, setSlideNumber] = useState(0)
@@ -52,13 +50,8 @@ const WSPGallery = ({galleryImages}) => {
         </div>
       }
 
-      {/* <br />
-      Current slide number:  {slideNumber}
-      <br />
-      Total Slides: {galleryImages.length}
-      <br /><br /> */}
-
-      <div className='galleryWrap my-5'>
+     
+      <div className='galleryWrap mt-2 my-2'>
         {
           galleryImages && galleryImages.map((slide, index) => {
             return(
@@ -72,8 +65,9 @@ const WSPGallery = ({galleryImages}) => {
             )
           })
         }
+       
       </div>
-
+       
     </div>
   )
 }

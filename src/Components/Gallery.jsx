@@ -25,9 +25,13 @@ function Gallery() {
       ]
     
   return (
-    <div>
+    
+      <div className="container"> 
+       
        <WSPGallery
         galleryImages={galleryImages} />
+       
+        
     </div>
   )
 }
