@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
 function Page7() {
+  useEffect(() => {
+    document.title = 'Kabir Sant-Satsang Mandir -AboutUs';
+}, []);
   const Top =()=>{
     window.scrollTo(0,0);
  }
   return (
     <>
+    <NavBar />
       <div className="Page6__Main" style={{ background: "#edd36b" }}>
         <div className="container">
           <div className="d-flex  justify-content-center align-items-center">

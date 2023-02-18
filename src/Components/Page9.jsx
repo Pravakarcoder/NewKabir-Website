@@ -1,6 +1,8 @@
+ 
 import { Link } from 'react-router-dom'
 import DoubleimgCard from './DoubleimgCard'
 import GoToTop from './GoToTop'
+import NavBar from './NavBar';
 function page9() {
   const Top = ()=>{
     window.scrollTo(0,0);
@@ -8,6 +10,7 @@ function page9() {
   return (
     
    <>
+   <NavBar />
   <div className="container-fluid"> 
    <div className="mt-2"> 
 <div className="card">
@@ -127,10 +130,11 @@ function page9() {
 
           <div className="col-4  col-md-4 gy-3">
           
-           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOX-BTgcLQVNNc5HVx3W0fNl_bC_d2qqzmOA5STYr-mh2vHZk0xX-R5vGPYg6yCsK5GvuC1WHUi3gUxye7ysXJvBrNt3-xTOsHue7kdKXGmVyZcb0Mf_G0_1f1U2Gv_0HC8XQKqQUCaBcHvzoHpqvpR6NX6MbW-VQQqi-sFIUxrj0Dii5UWg/w480-h640/KabirSatSaheb.jpeg" alt="inn_logo" className="img-fluid"/> 
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOX-BTgcLQVNNc5HVx3W0fNl_bC_d2qqzmOA5STYr-mh2vHZk0xX-R5vGPYg6yCsK5GvuC1WHUi3gUxye7ysXJvBrNt3-xTOsHue7kdKXGmVyZcb0Mf_G0_1f1U2Gv_0HC8XQKqQUCaBcH
+           vzoHpqvpR6NX6MbW-VQQqi-sFIUxrj0Dii5UWg/w480-h640/KabirSatSaheb.jpeg" alt="inn_logo" className="img-fluid"/> 
           </div>
           <div className="col-4 col-md-4">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOX-BTgcLQVNNc5HVx3W0fNl_bC_d2qqzmOA5STYr-mh2vHZk0xX-R5vGPYg6yCsK5GvuC1WHUi3gUxye7ysXJvBrNt3-xTOsHue7kdKXGmVyZcb0Mf_G0_1f1U2Gv_0HC8XQKqQUCaBcHvzoHpqvpR6NX6MbW-VQQqi-sFIUxrj0Dii5UWg/w480-h640/KabirSatSaheb.jpeg" alt="ccs_logo" className="img-fluid"/> 
+            <img src="./main.png"  alt="ccs_logo" className="img-fluid"/> 
           </div>
           <div className="col-4 col-md-4">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOX-BTgcLQVNNc5HVx3W0fNl_bC_d2qqzmOA5STYr-mh2vHZk0xX-R5vGPYg6yCsK5GvuC1WHUi3gUxye7ysXJvBrNt3-xTOsHue7kdKXGmVyZcb0Mf_G0_1f1U2Gv_0HC8XQKqQUCaBcHvzoHpqvpR6NX6MbW-VQQqi-sFIUxrj0Dii5UWg/w480-h640/KabirSatSaheb.jpeg" alt="ccs_logo" className="img-fluid"/> 
@@ -164,11 +168,18 @@ function page9() {
       
        </div>
    <GoToTop />
+
    <div className="container mt-4">
           <div className="d-flex justify-content-around  mb-3">
-            <Link to="/page8">
+
+          <Link to="/page8">
               <button type="button" onClick={Top} className="btn btn-outline-dark">
                 ←previous
+              </button>
+            </Link> 
+            <Link to="#">
+              <button type="button" className="btn btn-outline-dark disabled">
+              next →
               </button>
             </Link>
            

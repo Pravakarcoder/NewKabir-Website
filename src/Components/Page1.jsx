@@ -1,13 +1,19 @@
-import React from 'react'
+ import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import "./About.css";
+import NavBar from './NavBar';
 
 function Page1() {
+  useEffect(() => {
+    document.title = 'Kabir Sant-Satsang Mandir -AboutUs';
+}, []);
    const Top =()=>{
      window.scrollTo(0,0);
   }
   return (
+     
      <>
+     <NavBar/>
          
       <div className="Blue__box">
       <div className="container">

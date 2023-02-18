@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Footer from './Footer';
  
 import './Home.css';
+import NavBar from './NavBar';
  
 function Home() {
+  useEffect(() => {
+    document.title = 'Kabir Sant-Satsang Mandir -Home';
+},  []);
   return (
     
     <> 
+    <NavBar />
       <div className="masthead"  style={{backgroundImage: ' url("https://images.unsplash.com/photo-1516475429286-465d815a0df7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60")'}}>
      <div className="color-overlay d-flex  justify-content-center align-items-center">
       <h3>Kabir Sant-Satsang Mandir</h3>
@@ -33,7 +39,7 @@ function Home() {
     </div>
   </div>
 </div>
-
+<Footer />
      
   </>   
  

@@ -1,11 +1,17 @@
- import React from 'react'
+ import React, { useEffect } from 'react'
 import './Contact.css'
-
+import NavBar from './NavBar';
 function Contact() {
+
+
+  useEffect(() => {
+   document.title="Kabir Sant-Satsang Mandir -ContactUs'"
+  }, []);
  
   return (
    
      <>
+     <NavBar />
      <div className="Con__main"> 
       <div className="Contact__Main">
     <div className="content">

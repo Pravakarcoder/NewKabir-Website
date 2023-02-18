@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Footer from './Footer';
+import NavBar from './NavBar';
 import WSPGallery from './WSPGallery'
  
 function Gallery() {
+  useEffect(() => {
+    document.title = 'Kabir Sant-Satsang Mandir -Gallery';
+}, []);
+  
 
     const galleryImages = [
         {
@@ -25,14 +31,15 @@ function Gallery() {
       ]
     
   return (
-    
+    <> 
+    <NavBar/>
       <div className="container"> 
        
        <WSPGallery
         galleryImages={galleryImages} />
-       
-        
     </div>
+    <Footer/>
+    </>
   )
 }
 
